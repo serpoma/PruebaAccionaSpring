@@ -40,6 +40,44 @@ Lectura de todos los Tweets que actualmente se encuentran en la Base de datos
        http://localhost:8080/api/v1/mytweets/validate/{idTweet}
        
 Lectura de los Tweets validados de un usuario concreto. 
+
        http://localhost:8080/api/v1/mytweets/readValidated/{userName}
+       
+Lectura de los N hashtags mas usados de los Tweets guardados de la base de datos.
+
+      http://localhost:8080/api/v1/mytweets/findTopHashtags
+
+## Modelo de Datos
+
+Los Tweets se mapean en Spring con este formato dentro de una clase propia llamada "MyTweets":
+
+      @Id
+      private String id;
+      private String username;
+      @Column(columnDefinition="varchar(300)")
+      private String text;
+      private String lang;
+      private boolean isValidated = false;	
+      private String hashTags="";
+      
+## Consideraciones de diseño
+
+La aplicación se ha diseñado atendiendo al patrón MVC: Existe un Controller que es la puerta de entrada a la API del servicio REST, un Service que lleva toda la parte de Negocio, y un Repository que es la parte encargada de la gestión de la base de datos.
+
+Se ha creado una clase especifica llamada "MyTwitterPropertiesConfig.java" que contiene las propiedades que se tienen en cuenta para ciertos aspectos de la aplicación (y que se tienen en cuenta en la clase Service). Tiene 3 propiedades:
+
+  // No se recogeran Tweets que no tengan al menos 1500 followers.
+ 	private Integer numMinFollowers = 1500;
+  
+  // Solo se recogeran Tweets de estos idiomas
+	private List<String> listLocationPermitted =  Arrays.asList("es", "fr", "it");
+  
+  //Numero máximo HashTags mas usados.
+	private Integer numHashtagsMoreUsed = 10;	
+
+
+
+
+	
 
 
