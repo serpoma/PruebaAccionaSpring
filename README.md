@@ -38,7 +38,7 @@ Las llamadas al API REST son las siguientes:
    
        http://localhost:8080/api/v1/mytweets/validate/{idTweet}
        
-**Lectura de los Tweets validados de un usuario concreto. **
+**Lectura de los Tweets validados de un usuario concreto.**
 
        http://localhost:8080/api/v1/mytweets/readValidated/{userName}
        
