@@ -10,9 +10,16 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "twitter.property")
 public class MyTwitterPropertiesConfig {
 	
+	// No se recogeran Tweets que no tengan al menos 1500 followers.
 	private Integer numMinFollowers = 1500;
+	
+	// Solo se recogeran Tweets de estos idiomas
 	private List<String> listLocationPermitted =  Arrays.asList("es", "fr", "it");
+	
+	//Numero máximo HashTags mas usados.
 	private Integer numHashtagsMoreUsed = 10;	
+	
+	
 	
 	public Integer getNumMinFollowers() {
 		return numMinFollowers;
