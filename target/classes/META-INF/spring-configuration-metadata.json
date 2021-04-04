@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "twitter.property",
+      "type": "com.serpoworks.api.rest.acciona.MyTwitterPropertiesConfig",
+      "sourceType": "com.serpoworks.api.rest.acciona.MyTwitterPropertiesConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "twitter.property.list-location-permitted",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.serpoworks.api.rest.acciona.MyTwitterPropertiesConfig"
+    },
+    {
+      "name": "twitter.property.num-hashtags-more-used",
+      "type": "java.lang.Integer",
+      "sourceType": "com.serpoworks.api.rest.acciona.MyTwitterPropertiesConfig"
+    },
+    {
+      "name": "twitter.property.num-min-followers",
+      "type": "java.lang.Integer",
+      "sourceType": "com.serpoworks.api.rest.acciona.MyTwitterPropertiesConfig"
+    }
+  ],
+  "hints": []
+}
