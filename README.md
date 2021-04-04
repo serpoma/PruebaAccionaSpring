@@ -1,6 +1,6 @@
 # PruebaAccionaSpring
 
-##DESCRIPCIÓN
+## DESCRIPCIÓN
 
 Implementar un Microservicio que consuma Tweets y basado en unos criterios de configuración los persista en una base de datos para su gestión a través de una API REST.
 
@@ -23,20 +23,23 @@ Subir el microservicio a un repositorio Git de su preferencia.
 Links útiles http://twitter4j.org/en/ (Utilizar streaming API) 
 https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
 
-##API
+## API
 
 Las llamadas al API REST son las siguientes:
 
 Recoge los X ultimos Tweets y los persiste en una base de datos H2
 
-   http://localhost:8080/api/v1/mytweets/collect
+       http://localhost:8080/api/v1/mytweets/collect
    
 Lectura de todos los Tweets que actualmente se encuentran en la Base de datos
 
-   http://localhost:8080/api/v1/mytweets/read
+       http://localhost:8080/api/v1/mytweets/read
    
  Valida un Tweet. Hay que pasarle al final de la URL el ID de dicho Tweet.
    
-   http://localhost:8080/api/v1/mytweets/validate/{idTweet}
+       http://localhost:8080/api/v1/mytweets/validate/{idTweet}
+       
+Lectura de los Tweets validados de un usuario concreto. 
+       http://localhost:8080/api/v1/mytweets/readValidated/{userName}
 
 
