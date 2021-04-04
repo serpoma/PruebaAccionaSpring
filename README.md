@@ -26,23 +26,23 @@ https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-obje
 
 Las llamadas al API REST son las siguientes:
 
-Recoge los X ultimos Tweets y los persiste en una base de datos H2
+**Recoge los X ultimos Tweets y los persiste en una base de datos H2**
 
        http://localhost:8080/api/v1/mytweets/collect
    
-Lectura de todos los Tweets que actualmente se encuentran en la Base de datos
+**Lectura de todos los Tweets que actualmente se encuentran en la Base de datos**
 
        http://localhost:8080/api/v1/mytweets/read
    
- Valida un Tweet. Hay que pasarle al final de la URL el ID de dicho Tweet.
+ **Valida un Tweet. Hay que pasarle al final de la URL el ID de dicho Tweet.**
    
        http://localhost:8080/api/v1/mytweets/validate/{idTweet}
        
-Lectura de los Tweets validados de un usuario concreto. 
+**Lectura de los Tweets validados de un usuario concreto. **
 
        http://localhost:8080/api/v1/mytweets/readValidated/{userName}
        
-Lectura de los N hashtags mas usados de los Tweets guardados de la base de datos.
+**Lectura de los N hashtags mas usados de los Tweets guardados de la base de datos.**
 
       http://localhost:8080/api/v1/mytweets/findTopHashtags
       
@@ -78,15 +78,15 @@ La aplicación se ha diseñado atendiendo al patrón MVC: Existe un Controller q
 
 Se ha creado una clase especifica llamada "MyTwitterPropertiesConfig.java" que contiene las propiedades que se tienen en cuenta para ciertos aspectos de la aplicación (y que se tienen en cuenta en la clase Service). Tiene 3 propiedades:
 
-  // No se recogeran Tweets que no tengan al menos 1500 followers.
+  **// No se recogeran Tweets que no tengan al menos 1500 followers.**
  	
 	private Integer numMinFollowers = 1500;
   
-  // Solo se recogeran Tweets de estos idiomas
+  **// Solo se recogeran Tweets de estos idiomas**
 	
 	private List<String> listLocationPermitted =  Arrays.asList("es", "fr", "it");
   
-  //Numero máximo HashTags mas usados.
+  **//Numero máximo HashTags mas usados.**
 	
 	private Integer numHashtagsMoreUsed = 10;	
 	
