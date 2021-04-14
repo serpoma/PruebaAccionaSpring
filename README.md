@@ -1,15 +1,16 @@
 # PruebaAccionaSpring
 
-## DESCRIPCIÓN
+## Descripción
 
 Implementar un Microservicio que consuma Tweets y basado en unos criterios de configuración los persista en una base de datos para su gestión a través de una API REST.
 
-## NOTA ANTES DE EJECUTAR LA APP
+## Nota Importante antes de ejecutar la aplicación
 
 En La Conexión a Twitter de la aplicación
+
  	Que se hace en el fichero twitter4j.properties 
 	
-Hay que especificar las claves para la conexión : Están en el fichero vacias, para que pongan las que consideren.	
+**Hay que especificar las claves para la conexión : Están en el fichero vacias, para que pongan las que consideren.	
 
 ## Restricciones:
 
