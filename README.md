@@ -10,7 +10,7 @@ En La Conexión a Twitter de la aplicación
 
  	Que se hace en el fichero twitter4j.properties 
 	
-**Hay que especificar las claves para la conexión : Están en el fichero vacias, para que pongan las que consideren.	
+Hay que especificar las claves para la conexión : Están en el fichero vacias, para que pongan las que consideren.	
 
 ## Restricciones:
 
