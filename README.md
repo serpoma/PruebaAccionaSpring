@@ -69,8 +69,8 @@ Los Tweets se mapean en Spring con este formato dentro de una clase propia llama
 	spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 	spring.h2.console.enabled=true
 	
-## Conexión a Twitter
- 	En el fichero twitter4j.properties HAY QUE ESPECIFICAR LAS CLAVES PARA LA CONEXIÓN: ESTAN VACIAS!
+## Conexión a Twitter (<font color="red"> HAY QUE ESPECIFICAR LAS CLAVES PARA LA CONEXIÓN: LAS HE DEJADO VACIAS, PARA QUE PONGAN LAS QUE USTEDES TENGAN</font>
+ 	En el fichero twitter4j.properties 
 
 ## Consideraciones de diseño
 
