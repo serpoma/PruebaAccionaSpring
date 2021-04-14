@@ -4,7 +4,14 @@
 
 Implementar un Microservicio que consuma Tweets y basado en unos criterios de configuración los persista en una base de datos para su gestión a través de una API REST.
 
-Restricciones:
+## NOTA ANTES DE EJECUTAR LA APP
+
+En La Conexión a Twitter de la aplicación
+ 	Que se hace en el fichero twitter4j.properties 
+	
+Hay que especificar las claves para la conexión : Están en el fichero vacias, para que pongan las que consideren.	
+
+## Restricciones:
 
    * Solo se deben persistir aquellos tweets cuyos usuarios superen un número N de seguidores (default 1500). 
    * Solo se deben persistir aquellos tweets cuyo idioma esté en una lista de idiomas permitidos (default español, francés, italiano). 
@@ -69,8 +76,9 @@ Los Tweets se mapean en Spring con este formato dentro de una clase propia llama
 	spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 	spring.h2.console.enabled=true
 	
-## Conexión a Twitter (<font color="red"> HAY QUE ESPECIFICAR LAS CLAVES PARA LA CONEXIÓN: LAS HE DEJADO VACIAS, PARA QUE PONGAN LAS QUE USTEDES TENGAN</font>
+## Conexión a Twitter
  	En el fichero twitter4j.properties 
+	
 
 ## Consideraciones de diseño
 
